@@ -13,7 +13,7 @@ const PROJECTS = [
     description: 'A funnel agency focused on building landing page funnels.',
     longDescription:
       'Zond Studio is a funnel agency focused on building landing page funnels with clear positioning, structured layouts, and direct call-to-action flows.',
-    image: '../assets/zond.png',
+    image: '../assets/Zond.png',
   },
   {
     id: 'heutagogix',
@@ -22,7 +22,7 @@ const PROJECTS = [
     description: 'A learning and educational brand currently being developed.',
     longDescription:
       'HeutagogiX is a learning and educational brand currently being developed around self-determined learning principles and practical study workflows.',
-    image: '/assets/Heutagogix.jpg',
+    image: '../assets/Heutagogix.jpg',
   },
   {
     id: 'yourz',
@@ -31,7 +31,7 @@ const PROJECTS = [
     description: 'A UGC advertising media platform and media app.',
     longDescription:
       'Yourz is a user-generated content (UGC) advertising media platform and media app designed to connect brands and creators around short-form campaign media.',
-    image: '/assets/yourz.jpg',
+    image: '../assets/yourz.jpg',
   },
   {
     id: 'phew',
