@@ -22,7 +22,7 @@ const PROJECTS = [
     description: 'A learning and educational brand currently being developed.',
     longDescription:
       'HeutagogiX is a learning and educational brand currently being developed around self-determined learning principles and practical study workflows.',
-    image: '../assets/Heutagogix.jpg',
+    image: './assets/Heutagogix.jpg',
   },
   {
     id: 'yourz',
@@ -31,7 +31,7 @@ const PROJECTS = [
     description: 'A UGC advertising media platform and media app.',
     longDescription:
       'Yourz is a user-generated content (UGC) advertising media platform and media app designed to connect brands and creators around short-form campaign media.',
-    image: '../assets/yourz.jpg',
+    image: './assets/yourz.jpg',
   },
   {
     id: 'phew',
@@ -40,7 +40,7 @@ const PROJECTS = [
     description: 'An AI-powered shopping selection app.',
     longDescription:
       'Phew is an AI-powered shopping selection app built to simplify product discovery and help shoppers narrow down relevant choices.',
-    image: '../assets/phew.jpg',
+    image: './assets/phew.jpg',
   },
 ];
 
