@@ -13,7 +13,7 @@ const PROJECTS = [
     description: 'A funnel agency focused on building landing page funnels.',
     longDescription:
       'Zond Studio is a funnel agency focused on building landing page funnels with clear positioning, structured layouts, and direct call-to-action flows.',
-    image: '/assets/Zond.png',
+    image: '../assets/Zond.png',
   },
   {
     id: 'heutagogix',
@@ -40,7 +40,7 @@ const PROJECTS = [
     description: 'An AI-powered shopping selection app.',
     longDescription:
       'Phew is an AI-powered shopping selection app built to simplify product discovery and help shoppers narrow down relevant choices.',
-    image: '/assets/phew.jpg',
+    image: '../assets/phew.jpg',
   },
 ];
 
