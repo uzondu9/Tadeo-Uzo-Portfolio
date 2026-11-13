@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me — Tadeo Uzo</title>
+    <meta name="description" content="Background, academics at Miva Open University, technical toolkit, and personal pursuits of Tadeo Uzo." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <!-- Floating Capsule Header -->
+      <div class="site-header-wrap">
+        <header class="site-header">
+          <nav class="header-nav-left" aria-label="Primary navigation">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/about.html" class="nav-link is-active">About</a>
+            <a href="/projects.html" class="nav-link">Projects</a>
+          </nav>
+
+          <a href="/index.html" class="brand-lockup">
+            <span class="brand-badge">T</span>
+            <span class="brand-wordmark">Tadeo Uzo</span>
+          </a>
+
+          <div class="header-nav-right">
+            <a href="/planner.html" class="nav-link">Academic Planner</a>
+            <a href="/contact.html" class="header-cta">
+              <span>Contact Us</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="header-mobile-controls">
+            <a href="/contact.html" class="mobile-contact-pill">Contact</a>
+            <button
+              type="button"
+              id="mobile-menu-toggle"
+              class="mobile-menu-toggle"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+            >
+              <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+              </svg>
+              <svg id="icon-close" style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div id="mobile-drawer" class="mobile-drawer">
+          <div class="mobile-drawer-list">
+            <a href="/index.html" class="mobile-drawer-link">Home</a>
+            <a href="/about.html" class="mobile-drawer-link is-active">About</a>
+            <a href="/projects.html" class="mobile-drawer-link">Projects</a>
+            <a href="/planner.html" class="mobile-drawer-link">Academic Planner</a>
+            <a href="/contact.html" class="mobile-drawer-link">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="page-container-5xl">
+          <!-- PAGE HEADER -->
+          <section class="page-header">
+            <p class="page-kicker">About Me</p>
+            <h1 class="page-title">
+              Independent Learner, Computer Scientist &amp; Builder
+            </h1>
+            <p class="page-subtitle">
+              Background, academics at Miva Open University, technical toolkit, and personal pursuits.
+            </p>
+          </section>
+
+          <!-- A. BACKGROUND SECTION -->
+          <section class="about-bg-grid">
+            <div class="about-portrait-wrap">
+              <div class="about-portrait-circle">
+                <img
+                  src="/assets/images/tadeo_uzo_portrait_1794486803854.jpg"
+                  alt="Tadeo Uzo - Miva Open University Student"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+            </div>
+
+            <div class="about-bg-content">
+              <h2 class="about-bg-heading">Educational Background</h2>
+
+              <div class="about-bg-prose">
+                <p>
+                  I am pursuing a <strong>B.Sc. in Computer Science</strong> at
+                  <strong>Miva Open University</strong> in Nigeria.
+                </p>
+                <p>
+                  My approach is guided by <strong>heutagogy</strong> — self-determined
+                  learning applied across my university coursework, Zond Studio, and HeutagogiX.
+                </p>
+              </div>
+
+              <div class="about-info-grid">
+                <div class="about-info-card">
+                  <span class="about-info-label">Institution</span>
+                  <span class="about-info-value">Miva Open University</span>
+                  <span class="about-info-meta">Nigeria</span>
+                </div>
+                <div class="about-info-card">
+                  <span class="about-info-label">Department</span>
+                  <span class="about-info-value">Computer Science</span>
+                  <span class="about-info-meta">B.Sc. Program</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- B. EDUCATION TABLE -->
+          <section class="schedule-section">
+            <div class="schedule-header">
+              <h2 class="section-title">Course Schedule</h2>
+              <span class="schedule-units">Miva Open University · 14 Total Units</span>
+            </div>
+
+            <div class="table-card">
+              <table class="course-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Course Code</th>
+                    <th scope="col">Course Title</th>
+                    <th scope="col" class="text-center">Units</th>
+                    <th scope="col">Schedule</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="course-code-cell">COS 106</td>
+                    <td class="course-title-cell">Introduction to Web Technologies</td>
+                    <td class="course-units-cell">3</td>
+                    <td class="course-schedule-cell">
+                      <span>Tue &amp; Thu</span>
+                      <span class="course-schedule-sep">·</span>
+                      <span class="course-schedule-time">10:00 AM - 12:00 PM</span>
+                    </td>
+                    <td class="course-status-cell">In Progress</td>
+                  </tr>
+                  <tr>
+                    <td class="course-code-cell">COS 101</td>
+                    <td class="course-title-cell">Introduction to Computer Science &amp; Problem Solving</td>
+                    <td class="course-units-cell">3</td>
+                    <td class="course-schedule-cell">
+                      <span>Mon &amp; Wed</span>
+                      <span class="course-schedule-sep">·</span>
+                      <span class="course-schedule-time">08:00 AM - 10:00 AM</span>
+                    </td>
+                    <td class="course-status-cell">In Progress</td>
+                  </tr>
+                  <tr>
+                    <td class="course-code-cell">MTH 101</td>
+                    <td class="course-title-cell">Elementary Mathematics I</td>
+                    <td class="course-units-cell">3</td>
+                    <td class="course-schedule-cell">
+                      <span>Tue &amp; Fri</span>
+                      <span class="course-schedule-sep">·</span>
+                      <span class="course-schedule-time">02:00 PM - 04:00 PM</span>
+                    </td>
+                    <td class="course-status-cell">In Progress</td>
+                  </tr>
+                  <tr>
+                    <td class="course-code-cell">PHY 101</td>
+                    <td class="course-title-cell">General Physics I</td>
+                    <td class="course-units-cell">3</td>
+                    <td class="course-schedule-cell">
+                      <span>Wednesday</span>
+                      <span class="course-schedule-sep">·</span>
+                      <span class="course-schedule-time">01:00 PM - 03:00 PM</span>
+                    </td>
+                    <td class="course-status-cell">In Progress</td>
+                  </tr>
+                  <tr>
+                    <td class="course-code-cell">GST 111</td>
+                    <td class="course-title-cell">Communication in English</td>
+                    <td class="course-units-cell">2</td>
+                    <td class="course-schedule-cell">
+                      <span>Thursday</span>
+                      <span class="course-schedule-sep">·</span>
+                      <span class="course-schedule-time">03:00 PM - 05:00 PM</span>
+                    </td>
+                    <td class="course-status-cell">In Progress</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- C. CAREER AND PROFESSIONAL DIRECTION -->
+          <section class="about-standalone-section">
+            <div class="section-heading-block">
+              <h2 class="section-title">Career and Professional Direction</h2>
+              <p class="section-subtitle">Core focus areas across active initiatives.</p>
+            </div>
+
+            <div class="career-grid">
+              <div class="career-card career-card--dark">
+                <h3 class="career-card-title">Zond Studio</h3>
+                <p class="career-card-desc">
+                  A funnel agency focused on building landing page funnels and conversion-focused digital experiences.
+                </p>
+              </div>
+
+              <div class="career-card career-card--light">
+                <h3 class="career-card-title">HeutagogiX</h3>
+                <p class="career-card-desc">
+                  A learning and educational brand focused on independent learning and helping people take greater responsibility for how they learn.
+                </p>
+              </div>
+
+              <div class="career-card career-card--dark">
+                <h3 class="career-card-title">Yourz</h3>
+                <p class="career-card-desc">
+                  A UGC advertising media platform designed to connect content creation and digital advertising.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- D. TECHNICAL COMPETENCIES -->
+          <section class="about-standalone-section">
+            <div class="section-heading-block">
+              <h2 class="section-title">Technical Competencies</h2>
+              <p class="section-subtitle">Foundational web technologies and development tools.</p>
+            </div>
+
+            <div class="skills-grid">
+              <div class="skill-card">
+                <div class="skill-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m18 16 4-4-4-4" />
+                    <path d="m6 8-4 4 4 4" />
+                    <path d="m14.5 4-5 16" />
+                  </svg>
+                </div>
+                <span class="skill-label">HTML</span>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="13.5" cy="6.5" r=".5" fill="currentColor" />
+                    <circle cx="17.5" cy="10.5" r=".5" fill="currentColor" />
+                    <circle cx="8.5" cy="7.5" r=".5" fill="currentColor" />
+                    <circle cx="6.5" cy="12.5" r=".5" fill="currentColor" />
+                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z" />
+                  </svg>
+                </div>
+                <span class="skill-label">CSS</span>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1" />
+                    <path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1" />
+                  </svg>
+                </div>
+                <span class="skill-label">JavaScript</span>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="18" height="18" x="3" y="3" rx="2" />
+                    <path d="M3 9h18" />
+                    <path d="M9 21V9" />
+                  </svg>
+                </div>
+                <span class="skill-label">UI Design</span>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="6" x2="6" y1="3" y2="15" />
+                    <circle cx="18" cy="6" r="3" />
+                    <circle cx="6" cy="18" r="3" />
+                    <path d="M18 9a9 9 0 0 1-9 9" />
+                  </svg>
+                </div>
+                <span class="skill-label">GitHub</span>
+              </div>
+
+              <div class="skill-card">
+                <div class="skill-icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="4 17 10 11 4 5" />
+                    <line x1="12" x2="20" y1="19" y2="19" />
+                  </svg>
+                </div>
+                <span class="skill-label">Chrome DevTools</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- E. HOBBIES AND PERSONAL PURSUITS -->
+          <section class="about-standalone-section">
+            <div class="section-heading-block">
+              <h2 class="section-title">Hobbies and Personal Pursuits</h2>
+              <p class="section-subtitle">Interests outside formal coursework.</p>
+            </div>
+
+            <div class="hobbies-grid">
+              <div class="hobby-card">
+                <div class="hobby-placeholder">Image Placeholder</div>
+                <div class="hobby-body">
+                  <h3 class="hobby-title">Reading</h3>
+                  <p class="hobby-desc">
+                    Exploring books and ideas across technology, business, and personal development.
+                  </p>
+                </div>
+              </div>
+
+              <div class="hobby-card">
+                <div class="hobby-placeholder">Image Placeholder</div>
+                <div class="hobby-body">
+                  <h3 class="hobby-title">Chess</h3>
+                  <p class="hobby-desc">
+                    Playing chess and solving tactical puzzles.
+                  </p>
+                </div>
+              </div>
+
+              <div class="hobby-card">
+                <div class="hobby-placeholder">Image Placeholder</div>
+                <div class="hobby-body">
+                  <h3 class="hobby-title">Writing</h3>
+                  <p class="hobby-desc">
+                    Writing notes, articles, and reflections on ideas and things I&apos;m learning.
+                  </p>
+                </div>
+              </div>
+
+              <div class="hobby-card">
+                <div class="hobby-placeholder">Image Placeholder</div>
+                <div class="hobby-body">
+                  <h3 class="hobby-title">Learning New Technologies</h3>
+                  <p class="hobby-desc">
+                    Exploring new digital tools, technologies, and creative possibilities.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Bottom Navigation Callout -->
+          <section class="about-callout">
+            <div>
+              <h3 class="about-callout-title">Explore Projects &amp; Tools</h3>
+              <p class="about-callout-sub">
+                View current projects or open the task planner.
+              </p>
+            </div>
+            <div class="about-callout-actions">
+              <a href="/projects.html" class="btn-callout-primary">View Projects</a>
+              <a href="/planner.html" class="btn-callout-secondary">Academic Planner</a>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- Dark Footer -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <div class="footer-brand-row">
+                <span class="footer-brand-badge">T</span>
+                <span class="footer-brand-name">Tadeo Uzo</span>
+              </div>
+              <p class="footer-brand-desc">
+                Computer Science student at Miva Open University, Nigeria and founder of Zond Studio.
+              </p>
+            </div>
+
+            <nav aria-label="Footer navigation" class="footer-nav">
+              <a href="/index.html">Home</a>
+              <a href="/about.html">About</a>
+              <a href="/projects.html">Projects</a>
+              <a href="/planner.html">Academic Planner</a>
+              <a href="/contact.html">Contact</a>
+            </nav>
+
+            <div class="footer-contact">
+              <a href="mailto:uzo4809@gmail.com" class="footer-email">uzo4809@gmail.com</a>
+              <span>Abuja &amp; Lagos, Nigeria</span>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>&copy; 2026 Tadeo Uzo. All rights reserved.</span>
+            <span>Miva Open University</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

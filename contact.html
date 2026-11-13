@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Tadeo Uzo</title>
+    <meta name="description" content="Get in touch with Tadeo Uzo using the contact form." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <!-- Floating Capsule Header -->
+      <div class="site-header-wrap">
+        <header class="site-header">
+          <nav class="header-nav-left" aria-label="Primary navigation">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/about.html" class="nav-link">About</a>
+            <a href="/projects.html" class="nav-link">Projects</a>
+          </nav>
+
+          <a href="/index.html" class="brand-lockup">
+            <span class="brand-badge">T</span>
+            <span class="brand-wordmark">Tadeo Uzo</span>
+          </a>
+
+          <div class="header-nav-right">
+            <a href="/planner.html" class="nav-link">Academic Planner</a>
+            <a href="/contact.html" class="header-cta">
+              <span>Contact Us</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="header-mobile-controls">
+            <a href="/contact.html" class="mobile-contact-pill">Contact</a>
+            <button
+              type="button"
+              id="mobile-menu-toggle"
+              class="mobile-menu-toggle"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+            >
+              <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+              </svg>
+              <svg id="icon-close" style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div id="mobile-drawer" class="mobile-drawer">
+          <div class="mobile-drawer-list">
+            <a href="/index.html" class="mobile-drawer-link">Home</a>
+            <a href="/about.html" class="mobile-drawer-link">About</a>
+            <a href="/projects.html" class="mobile-drawer-link">Projects</a>
+            <a href="/planner.html" class="mobile-drawer-link">Academic Planner</a>
+            <a href="/contact.html" class="mobile-drawer-link is-active">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="page-container-2xl">
+          <!-- Header -->
+          <section class="page-header">
+            <p class="page-kicker">Contact</p>
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">
+              Send a message using the form below.
+            </p>
+          </section>
+
+          <!-- Centered Primary Contact Form -->
+          <section class="contact-card">
+            <div id="contact-success" class="contact-success">
+              <div class="contact-success-row">
+                <div class="contact-success-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m9 12 2 2 4-4" />
+                  </svg>
+                </div>
+                <div>
+                  <h2 class="contact-success-title">Message Sent</h2>
+                  <p id="contact-success-text" class="contact-success-text"></p>
+                </div>
+              </div>
+
+              <button type="button" id="contact-reset-btn" class="contact-reset-btn">
+                Send Another Message
+              </button>
+            </div>
+
+            <form id="contact-form" novalidate class="contact-form">
+              <div>
+                <label for="contact-form-name" class="form-label">
+                  Full Name <span class="text-orange">*</span>
+                </label>
+                <input
+                  id="contact-form-name"
+                  type="text"
+                  placeholder="Your full name"
+                  class="form-input"
+                />
+                <p id="error-name" class="form-error">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" x2="12" y1="8" y2="12" />
+                    <line x1="12" x2="12.01" y1="16" y2="16" />
+                  </svg>
+                  <span id="error-name-text"></span>
+                </p>
+              </div>
+
+              <div class="form-grid-2">
+                <div>
+                  <label for="contact-form-email" class="form-label">
+                    Email Address <span class="text-orange">*</span>
+                  </label>
+                  <input
+                    id="contact-form-email"
+                    type="email"
+                    placeholder="name@domain.com"
+                    class="form-input"
+                  />
+                  <p id="error-email" class="form-error">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <span id="error-email-text"></span>
+                  </p>
+                </div>
+
+                <div>
+                  <label for="contact-form-phone" class="form-label">
+                    Phone Number <span class="text-orange">*</span>
+                  </label>
+                  <input
+                    id="contact-form-phone"
+                    type="tel"
+                    placeholder="08012345678"
+                    class="form-input"
+                  />
+                  <p id="error-phone" class="form-error">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="12" x2="12" y1="8" y2="12" />
+                      <line x1="12" x2="12.01" y1="16" y2="16" />
+                    </svg>
+                    <span id="error-phone-text"></span>
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <label for="contact-form-topic" class="form-label">Subject</label>
+                <select id="contact-form-topic" class="form-select">
+                  <option value="Academic">Academic Inquiry</option>
+                  <option value="Zond Studio Audit">Zond Studio</option>
+                  <option value="Collaboration">Collaboration</option>
+                  <option value="General">General Inquiry</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="contact-form-message" class="form-label">
+                  Message <span class="text-orange">*</span>
+                </label>
+                <textarea
+                  id="contact-form-message"
+                  rows="4"
+                  placeholder="Write your message here..."
+                  class="form-textarea"
+                ></textarea>
+                <p id="error-message" class="form-error">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" x2="12" y1="8" y2="12" />
+                    <line x1="12" x2="12.01" y1="16" y2="16" />
+                  </svg>
+                  <span id="error-message-text"></span>
+                </p>
+              </div>
+
+              <div class="form-submit-wrap">
+                <button type="submit" class="contact-submit-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+                    <path d="m21.854 2.147-10.94 10.939" />
+                  </svg>
+                  <span>Send Message</span>
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+      </main>
+
+      <!-- Dark Footer -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <div class="footer-brand-row">
+                <span class="footer-brand-badge">T</span>
+                <span class="footer-brand-name">Tadeo Uzo</span>
+              </div>
+              <p class="footer-brand-desc">
+                Computer Science student at Miva Open University, Nigeria and founder of Zond Studio.
+              </p>
+            </div>
+
+            <nav aria-label="Footer navigation" class="footer-nav">
+              <a href="/index.html">Home</a>
+              <a href="/about.html">About</a>
+              <a href="/projects.html">Projects</a>
+              <a href="/planner.html">Academic Planner</a>
+              <a href="/contact.html">Contact</a>
+            </nav>
+
+            <div class="footer-contact">
+              <a href="mailto:uzo4809@gmail.com" class="footer-email">uzo4809@gmail.com</a>
+              <span>Abuja &amp; Lagos, Nigeria</span>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>&copy; 2026 Tadeo Uzo. All rights reserved.</span>
+            <span>Miva Open University</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

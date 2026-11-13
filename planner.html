@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Planner — Tadeo Uzo</title>
+    <meta name="description" content="Add tasks, mark them complete, and remove finished items." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <!-- Floating Capsule Header -->
+      <div class="site-header-wrap">
+        <header class="site-header">
+          <nav class="header-nav-left" aria-label="Primary navigation">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/about.html" class="nav-link">About</a>
+            <a href="/projects.html" class="nav-link">Projects</a>
+          </nav>
+
+          <a href="/index.html" class="brand-lockup">
+            <span class="brand-badge">T</span>
+            <span class="brand-wordmark">Tadeo Uzo</span>
+          </a>
+
+          <div class="header-nav-right">
+            <a href="/planner.html" class="nav-link is-active">Academic Planner</a>
+            <a href="/contact.html" class="header-cta">
+              <span>Contact Us</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="header-mobile-controls">
+            <a href="/contact.html" class="mobile-contact-pill">Contact</a>
+            <button
+              type="button"
+              id="mobile-menu-toggle"
+              class="mobile-menu-toggle"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+            >
+              <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+              </svg>
+              <svg id="icon-close" style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div id="mobile-drawer" class="mobile-drawer">
+          <div class="mobile-drawer-list">
+            <a href="/index.html" class="mobile-drawer-link">Home</a>
+            <a href="/about.html" class="mobile-drawer-link">About</a>
+            <a href="/projects.html" class="mobile-drawer-link">Projects</a>
+            <a href="/planner.html" class="mobile-drawer-link is-active">Academic Planner</a>
+            <a href="/contact.html" class="mobile-drawer-link">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="page-container-2xl">
+          <!-- Header -->
+          <section class="page-header">
+            <p class="page-kicker">Task List</p>
+            <h1 class="page-title">Academic Planner</h1>
+            <p class="page-subtitle">
+              Add tasks, mark them complete, and remove finished items.
+            </p>
+          </section>
+
+          <!-- Task Entry & List -->
+          <section class="planner-card">
+            <form id="planner-form" class="planner-form">
+              <label for="task-input" class="sr-only">New task</label>
+              <input
+                id="task-input"
+                type="text"
+                placeholder="Enter a task..."
+                class="planner-input"
+              />
+              <button type="submit" class="planner-add-btn">Add</button>
+            </form>
+
+            <div id="planner-list" class="planner-list"></div>
+          </section>
+        </div>
+      </main>
+
+      <!-- Dark Footer -->
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <div class="footer-top">
+            <div class="footer-brand">
+              <div class="footer-brand-row">
+                <span class="footer-brand-badge">T</span>
+                <span class="footer-brand-name">Tadeo Uzo</span>
+              </div>
+              <p class="footer-brand-desc">
+                Computer Science student at Miva Open University, Nigeria and founder of Zond Studio.
+              </p>
+            </div>
+
+            <nav aria-label="Footer navigation" class="footer-nav">
+              <a href="/index.html">Home</a>
+              <a href="/about.html">About</a>
+              <a href="/projects.html">Projects</a>
+              <a href="/planner.html">Academic Planner</a>
+              <a href="/contact.html">Contact</a>
+            </nav>
+
+            <div class="footer-contact">
+              <a href="mailto:uzo4809@gmail.com" class="footer-email">uzo4809@gmail.com</a>
+              <span>Abuja &amp; Lagos, Nigeria</span>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>&copy; 2026 Tadeo Uzo. All rights reserved.</span>
+            <span>Miva Open University</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
